@@ -19,13 +19,13 @@ function CheckoutForm({ amount }) {
         amount: amount
       })
     })
-    const secretKey=await res.json();
+    const secretKey = await res.json();
     console.log(secretKey);
     const { error } = await stripe.confirmPayment({
-      clientSecret:secretKey,
+      clientSecret: secretKey,
       elements,
-      confirmParams:{
-        return_url:"https://ubeerrr.netlify.app/"
+      confirmParams: {
+        return_url: "https://ubeerrr.netlify.app/"
       }
     })
   }
