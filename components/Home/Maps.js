@@ -10,8 +10,8 @@ function Maps() {
   };
 
   const [center, setCenter] = useState({
-    lat: -3.745,
-    lng: -38.523
+    lat: 20.5937,
+    lng: 78.9629
   });
 
   const { source, setSource } = useContext(SourceContext);
@@ -58,7 +58,6 @@ function Maps() {
     },(result,status) => {
       if (status === google.maps.DirectionsStatus.OK) {
         setDirectionRoutePoints(result);
-        console.log('haan bhai',result)
       } else {
         console.error('Error with direction route');
       }

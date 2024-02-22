@@ -31,7 +31,7 @@ function CheckoutForm({ amount }) {
   }
   return (
     <div className='flex flex-col justify-center items-center w-full'>
-      <h2 className='m-5 font-bold'>Amount to Pay: {amount}</h2>
+      <h2 className='m-5 font-bold'>Amount to Pay: $ {amount}</h2>
       <form className='max-w-md' onSubmit={handleSubmit}>
         <PaymentElement />
         <button className='w-full bg-black text-white p-2 rounded-lg mt-2'>Pay</button>
