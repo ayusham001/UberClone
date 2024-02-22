@@ -23,7 +23,7 @@ function CarListOption({ distance }) {
       ))}
       {selectedCar ? (
         <div className='flex text-[14px] md:pr-0 pr-10 z-10 justify-between fixed bottom-2 bg-white rounded-lg shadow-xl w-full md:w-[30%] border-[1px] items-center'>
-          <p className='p-1'>Make Payment For</p>
+          <p className='p-1'>Make Payment of <b>${(selectedCar.amount * distance).toFixed(2)}</b></p>
           <button
             className='p-3 bg-black text-white rounded-lg text-center'
             onClick={() => {
