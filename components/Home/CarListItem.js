@@ -5,7 +5,7 @@ import { FaUser } from "react-icons/fa6";
 function CarListItem({ car,distance }) {
   return (
     <div className='mt-4 p-4'>
-      <div className='md:flex items-center justify-between sm:flex sm:flex-col'>
+      <div className='md:flex justify-between sm:flex sm:flex-col'>
         <div className='md:flex md:flex-row items-center gap-5 sm:flex sm:flex-col'>
           <Image src={car.image}
             width={100} height={100}
